@@ -2,7 +2,7 @@
   "name": "vscode-nrql",
   "displayName": "NRQL",
   "description": "New Relic Query Language support for Visual Studio Code",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "dynova",
   "keywords": [
     "New Relic",
