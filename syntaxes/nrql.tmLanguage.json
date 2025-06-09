@@ -1,0 +1,171 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "NRQL",
+	"comment": "VSCode Syntax Parser for New Relic Query Language",
+	"scopeName": "source.nrql",
+	"foldingStartMarker": "(DELETE|FROM|SELECT|SHOW|FACET|LIMIT|OFFSET|WITH|JOIN|WHERE|BY|SINCE|UNTIL|TIMEZONE\\()\\s*$",
+	"foldingStopMarker": "^\\s*\\)",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#builtin_operators"
+		},
+		{
+			"include": "#builtin_functions"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#regex"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.nrql",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.line.nrql",
+					"match": "--.*$"
+				},
+				{
+					"name": "comment.block.nrql",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(TRUE|FALSE|NULL)\\b"
+				},
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(THIS|LAST|AGO)\\b"
+				},
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(NOW|TODAY|YESTERDAY)\\b"
+				},
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)\\b"
+				},
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(MILLISECOND|MILLISECONDS|SECOND|SECONDS|MINUTE|MINUTES|HOUR|HOURS|DAY|DAYS|WEEK|WEEKS|MONTH|MONTHS|QUARTER|QUARTERS|YEAR|YEARS)\\b"
+				},
+				{
+					"name": "keyword.nrql",
+					"match": "(?i)\\b(SHOW|EVENT|TYPES|DELETE|FROM|WITH|INNER|LEFT|JOIN|SELECT|WHERE|FACET|CASES|COMPARE|EXTRAPOLATE|LIMIT|OFFSET|ORDER|BY|ASC|DESC|SINCE|UNTIL|AUTO|PREDICT|TIMEZONE|SLIDE|TIMESERIES|METRIC_FORMAT|RAW)\\b"
+				}
+			]
+		},
+		"builtin_operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.logical.nrql",
+					"match": "(?i)\\b(AND|AS|AT|IN|IS|LIKE|NOT|ON|OR|RLIKE)\\b"
+				},
+				{
+					"name": "keyword.operator.comparison.nrql",
+					"match": "\\b(=|!=|<|<=|>|>=)\\b"
+				},
+				{
+					"match": "\\+|\\-|\\*|/",
+					"name": "keyword.operator.arithmetic.nrql"
+				}
+			]
+		},
+		"builtin_functions": {
+			"patterns": [
+				{
+					"name": "support.function.aggregator.nrql",
+					"match": "(?i)\\b(aggregationEndTime|apdex|average|bucketPercentile|bytecountestimate|cardinality|cdfPercentage|count|derivative|earliest|filter|funnel|histogram|keyset|latest|latestrate|max|median|min|percentage|percentile|predictLinear|rate|stdvar|sum|uniqueCount|uniques)\\b"
+				},
+				{
+					"name": "support.function.nonaggregator.nrql",
+					"match": "(?i)\\b(accountId|aparse|blob|buckets|capture|cidrAddress|concat|contains|convert|decode|dimensions|encode|eventType|getCdfCount|getField|if|jparse|length|lookup|lower|mapKeys|mapValues|mod|position|round|stddev|substring|toDatetime|toTimestamp|upper)\\b"
+				},
+				{
+					"name": "support.function.datetime.nrql",
+					"match": "(?i)\\b(dateOf|dayOfMonthOf|daysInMonthOf|hourOf|minuteOf|monthOf|quarterOf|weekdayOf|weekOf|yearOf)\\b"
+				},
+				{
+					"name": "support.function.math.nrql",
+					"match": "(?i)\\b(abs|ceil|clamp_max|clamp_min|exp|floor|ln|log|log10|log2|pow|sqrt)\\b"
+				},
+				{
+					"name": "support.function.cast.nrql",
+					"match": "(?i)\\b(boolean|numeric|string|tuple)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.nrql",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.nrql",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.backtick.nrql",
+					"begin": "`",
+					"end": "`",
+					"patterns": [
+						{
+							"name": "constant.character.escape.nrql",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		},
+		"regex": {
+			"patterns": [
+				{
+					"name": "string.regexp.nrql",
+					"begin": "r'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.nrql",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.nrql",
+					"match": "\\b(0|[1-9][0-9]*)\\b"
+				},
+				{
+					"name": "constant.numeric.float.nrql",
+					"match": "\\b(0|[1-9][0-9]*)?\\.[0-9]+(e[+-]?[0-9]+)?\\b"
+				}
+			]
+		}
+	}
+}
