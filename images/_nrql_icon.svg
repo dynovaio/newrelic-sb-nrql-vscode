@@ -3,45 +3,17 @@
    width="16"
    height="16"
    viewBox="0 0 16 16"
-   fill="none"
-   version="1.1"
-   id="svg3"
-   sodipodi:docname="_nrql_icon.svg"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs3" />
-  <sodipodi:namedview
-     id="namedview3"
-     pagecolor="#ffffff"
-     bordercolor="#999999"
-     borderopacity="1"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="69.125"
-     inkscape:cx="7.9927667"
-     inkscape:cy="8"
-     inkscape:window-width="3440"
-     inkscape:window-height="1359"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg3" />
-  <path
-     d="M 5.6671024,9.3469892 V 13.654349 L 8.0000002,15 V 8.0004667 L 1.9374906,4.4998132 v 2.6930761 z"
-     fill="#1ce783"
-     id="path1" />
-  <path
-     d="M 8.7479586,11.875799 11.729612,10.153695 V 5.8463357 l 2.332026,-1.3465225 v 7.0004048 l -5.3136794,3.067936 z"
-     fill="#1ce783"
-     id="path2" />
-  <path
-     d="M 5.0174524,5.4137811 7.9996646,3.6926451 11.729947,5.8463241 14.062084,4.4999922 7.9995546,0.9997898 2.6858046,4.0676032 Z"
-     fill="#1ce783"
-     id="path3" />
+   xmlns="http://www.w3.org/2000/svg">
+   <path
+      d="M 5.6671024,9.3469892 V 13.654349 L 8.0000002,15 V 8.0004667 L 1.9374906,4.4998132 v 2.6930761 z"
+      fill="#1ce783"
+      id="path1" />
+   <path
+      d="M 8.7479586,11.875799 11.729612,10.153695 V 5.8463357 l 2.332026,-1.3465225 v 7.0004048 l -5.3136794,3.067936 z"
+      fill="#1ce783"
+      id="path2" />
+   <path
+      d="M 5.0174524,5.4137811 7.9996646,3.6926451 11.729947,5.8463241 14.062084,4.4999922 7.9995546,0.9997898 2.6858046,4.0676032 Z"
+      fill="#1ce783"
+      id="path3" />
 </svg>
