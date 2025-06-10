@@ -1,3 +1,6 @@
+
+# Sample NRQL in Markdown
+
 ```nrql
 FROM
     Log
