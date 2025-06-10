@@ -10,7 +10,7 @@ New Relic already provides syntax highlighting as part of their [Code Stream Ext
 
 > This extension is not affiliated with *New Relic, Inc.* in any way.
 
-![NRQL Syntax Highlighting](./images/_nrql_sample.png)
+![NRQL Syntax Highlighting](https://github.com/dynovaio/newrelic-sb-nrql-vscode/raw/HEAD/images/_nrql_sample.png)
 
 ## ✨ Features
 
