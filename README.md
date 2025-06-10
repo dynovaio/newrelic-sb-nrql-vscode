@@ -8,21 +8,35 @@ This package provides simple syntax highlighting for New Relic Query Language
 
 New Relic already provides syntax highlighting as part of their [Code Stream Extension ↗][vscode-codestream], but this extension provides a lightweight alternative for those who want to use NRQL in their local development environment without the need to log into New Relic.
 
-## Features
+> This extension is not affiliated with *New Relic, Inc.* in any way.
 
-* Syntax highlighting for NRQL queries.
+![NRQL Syntax Highlighting](./images/_nrql_sample.png)
 
-## Requirements
+## ✨ Features
 
-For now there aren't any requeriments...
+- ✅ Syntax highlighting for:
+  - Clauses
+  - Functions
+  - Operators
+  - Comments (//, /* ... */, --)
+  - Strings (quoted & backticked)
+- ✅ Markdown embedding support
+- ✅ Custom file icon for `.nrql` files
 
-## Extension Settings
+## 📦 Installation
 
-... and no settings ...
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+3. Search for "New Relic Query Language" or "NRQL".
+4. Click on the "Install" button for the extension named "New Relic Query Language (NRQL) for Visual Studio Code".
+5. Once installed, you can start using NRQL syntax highlighting in your `.nrql` files.
+6. Optionally, you can set the default language for `.nrql` files by adding the following to your `settings.json`:
 
-## Known Issues
-
-... and a lot of issues to discover ...
+```json
+"files.associations": {
+    "*.nrql": "nrql"
+}
+```
 
 ## Release Notes
 

@@ -2,7 +2,7 @@
   "name": "vscode-nrql",
   "displayName": "NRQL",
   "description": "New Relic Query Language support for Visual Studio Code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "dynova",
   "keywords": [
     "New Relic",
@@ -11,7 +11,7 @@
     "syntax"
   ],
   "license": "MIT",
-  "icon": "images/icon.png",
+  "icon": "images/_extension_icon.png",
   "galleryBanner": {
     "color": "#1d252d",
     "theme": "dark"
@@ -41,6 +41,10 @@
         "extensions": [
           ".nrql"
         ],
+        "icon": {
+          "light": "images/_nrql_icon.svg",
+          "dark": "images/_nrql_icon.svg"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
@@ -48,7 +52,17 @@
       {
         "language": "nrql",
         "scopeName": "source.nrql",
-        "path": "./syntaxes/nrql.tmLanguage.json"
+        "path": "./syntaxes/nrql.json"
+      },
+      {
+        "scopeName": "markdown.nrql.codeblock",
+        "path": "./syntaxes/markdown-nrql-codeblock.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.nrql": "nrql"
+        }
       }
     ]
   }
