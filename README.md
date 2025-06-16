@@ -3,14 +3,10 @@
 
 # New Relic Query Language (NRQL) for Visual Studio Code
 
-This package provides simple syntax highlighting for New Relic Query Language
+This extension provides syntax highlighting for New Relic Query Language
 (NRQL) in Visual Studio Code.
 
-New Relic already provides syntax highlighting as part of their [Code Stream Extension ↗][vscode-codestream], but this extension provides a lightweight alternative for those who want to use NRQL in their local development environment without the need to log into New Relic.
-
-> This extension is not affiliated with *New Relic, Inc.* in any way.
-
-![NRQL Syntax Highlighting](./images/_nrql_sample.png)
+![NRQL Syntax Highlighting](https://github.com/dynovaio/newrelic-sb-nrql-vscode/raw/HEAD/images/_nrql_sample.png)
 
 ## ✨ Features
 
@@ -54,6 +50,15 @@ See the list of contributors in our [contributors page ↗][contributors].
 
 This project is licensed under the terms of the MIT license. See the
 [LICENSE ↗][license] file.
+
+## Disclaimer
+
+New Relic already provides syntax highlighting as part of their
+[Code Stream Extension ↗][vscode-codestream], but this extension provides a
+lightweight alternative for those who want to use NRQL in their local
+development environment without the need to log into New Relic.
+
+> This extension is not affiliated with *New Relic, Inc.* in any way.
 
 [badge-license]: https://img.shields.io/badge/License-MIT-blue.svg?maxAge=2592000&style=flat-square
 [badge-language]: https://img.shields.io/badge/Language-NRQL-blue.svg?maxAge=2592000&style=flat-square

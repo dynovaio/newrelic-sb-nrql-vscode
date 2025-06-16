@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.3.0] - 2025-06-16
+
+* New keyword `USING` for `PREDICT` statements.
+* New function `holtwinter` for Holt-Winters forecasting with `PREDICT`
+  statements.
+
 ## [0.2.0] - 2024-06-10
 
 * Add markdown embedding support for NRQL queries.
