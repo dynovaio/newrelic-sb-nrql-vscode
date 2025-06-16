@@ -70,7 +70,7 @@
 				},
 				{
 					"name": "keyword.nrql",
-					"match": "(?i)\\b(SHOW|EVENT|TYPES|DELETE|FROM|WITH|INNER|LEFT|JOIN|SELECT|WHERE|FACET|CASES|COMPARE|EXTRAPOLATE|LIMIT|OFFSET|ORDER|BY|ASC|DESC|SINCE|UNTIL|AUTO|PREDICT|TIMEZONE|SLIDE|TIMESERIES|METRIC_FORMAT|RAW)\\b"
+					"match": "(?i)\\b(SHOW|EVENT|TYPES|DELETE|FROM|WITH|INNER|LEFT|JOIN|SELECT|WHERE|FACET|CASES|COMPARE|EXTRAPOLATE|LIMIT|OFFSET|ORDER|BY|ASC|DESC|SINCE|UNTIL|AUTO|PREDICT|TIMEZONE|SLIDE|TIMESERIES|METRIC_FORMAT|RAW|USING)\\b"
 				}
 			]
 		},
@@ -98,7 +98,7 @@
 				},
 				{
 					"name": "support.function.nonaggregator.nrql",
-					"match": "(?i)\\b(accountId|aparse|blob|buckets|capture|cidrAddress|concat|contains|convert|decode|dimensions|encode|eventType|getCdfCount|getField|if|jparse|length|lookup|lower|mapKeys|mapValues|mod|position|round|stddev|substring|toDatetime|toTimestamp|upper)\\b"
+					"match": "(?i)\\b(accountId|aparse|blob|buckets|capture|cidrAddress|concat|contains|convert|decode|dimensions|encode|eventType|getCdfCount|getField|if|jparse|length|lookup|lower|mapKeys|mapValues|mod|position|round|stddev|substring|toDatetime|toTimestamp|upper|holtwinters)\\b"
 				},
 				{
 					"name": "support.function.datetime.nrql",
