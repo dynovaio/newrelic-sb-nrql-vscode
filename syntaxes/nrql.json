@@ -50,7 +50,7 @@
 			"patterns": [
 				{
 					"name": "keyword.nrql",
-					"match": "(?i)\\b(TRUE|FALSE|NULL)\\b"
+					"match": "(?i)\\b(TRUE|FALSE|NULL|NONE)\\b"
 				},
 				{
 					"name": "keyword.nrql",
